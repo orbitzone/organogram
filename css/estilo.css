@@ -1,0 +1,114 @@
+*{font-family: arial, tahoma;}
+.col{
+  height: auto;
+}
+.row-hidden{
+  min-height: 110px;
+  clear: both;
+  margin: 0;
+
+}
+.row{
+  padding-bottom: 40px;
+}
+
+.chartWrap{
+  cursor: pointer;
+}
+.chartWrap{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+  border: none;
+  width: 100%;
+  min-height: 110px;
+  background: #006656;
+  box-sizing: border-box;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAABXUlEQVQ4T7WUgU3DQAxFXzeADWADRqATABvABjABdALoBG0nACagG8AGsAGMgF51jpzrJUGqsFRVyTnf/9v/PGM4zoEz4Aj4AT6A7Uj+7mjWSLgG7oGTxtkXsASehoAzoExWwOUUi8L0qjDvpWfA5wpMeRtAVrK9aJzP6+IBqEzZGfbL6q1+2VcLq8a4q+UH4GfqmVXHmi/oWwGU/WlmKaCTfC8vBdqT0eipalRl9AgIeAs8lsMbYP2HoTg4pRsL4CG+EdAHbbJXbQQ4y/5/wFxNwzq5qbBFtsrQES9Zshb4Li+0jFPzfyjM1xVhneOcH7bJU/POOrkWqCAOQ1WGzGTYRQDWVfWX0jsp5ZY4PG2Wo+eMfPVM1LAhJT6ScQ1St6MDrbeNHyp/DMAC3u268A60tb6srnFdBnmF2YbX0obsjMx2PgQ4ZRvP80KJ/MUhgC3QgxgGK+X7c7FsfwFjYEkV2UREzQAAAABJRU5ErkJggg==') !important;
+  background-repeat: no-repeat !important;
+  background-position: 98% 95% !important;
+  border-left: none;
+  border-right: none;
+  background-size: 15px !important;
+}
+
+.flowchart{
+  padding: 1% 10%;
+}
+.chartWrap{
+  border-right: 1px dashed #f9f9f9;
+  border-left: 1px dashed #f9f9f9;
+}
+.chart:first-child .chartWrap{
+  border-left: none;
+}
+.chart:last-child .chartWrap{
+  border-right: none;
+}
+.chart.active > .col > .chartWrap{
+  background: #006656  url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDQ4IDQ4IiB3aWR0aD0iNDgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTE0LjgzIDMwLjgzbDkuMTctOS4xNyA5LjE3IDkuMTcgMi44My0yLjgzLTEyLTEyLTEyIDEyeiIvPjxwYXRoIGQ9Ik0wIDBoNDh2NDhoLTQ4eiIgZmlsbD0ibm9uZSIvPjwvc3ZnPg==") no-repeat bottom right !important;
+}
+.chart.active{
+  clear: both !important;
+  padding-top: 40px !important;
+}
+.expand > .col > .chartWrap{
+  background: #006656  url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDQ4IDQ4IiB3aWR0aD0iNDgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTE0LjgzIDE2LjQybDkuMTcgOS4xNyA5LjE3LTkuMTcgMi44MyAyLjgzLTEyIDEyLTEyLTEyeiIvPjxwYXRoIGQ9Ik0wLS43NWg0OHY0OGgtNDh6IiBmaWxsPSJub25lIi8+PC9zdmc+") no-repeat bottom right !important;
+}
+
+.chart.active .row-hidden .chartWrap{
+  background: #00a89b;
+}
+.chart {
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.chartWrap{
+  color: #ffffff;
+  display: table;
+}
+.chartWrap .textWrap{
+  display: table-cell;
+  vertical-align:  middle;
+}
+.p25{
+  padding: 2.5px;
+}
+.np{
+  padding: 0px !important;
+}
+.openClose{
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+@media screen and (min-width: 320px) {
+  .chartWrap{
+    padding: 5px;
+    font-size: 0.7em;
+    line-height: 15px;
+    font-weight: 700;
+  }
+}
+@media screen and (min-width: 640px) {
+  .chartWrap{
+    padding: 10px;
+    font-size: 10px;
+    line-height: 15px;
+    font-weight: 700;
+  }
+  .flowchart{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+@media screen and (min-width: 980px) {
+  .chartWrap{
+    padding: 15px;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 700;
+  }
+}

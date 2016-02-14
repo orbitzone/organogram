@@ -1,0 +1,203 @@
+*{font-family: arial, tahoma;}
+.chart{
+  height: auto;
+}
+.row-hidden, .row-hidden2{
+  min-height: 110px;
+  height: auto;
+  width: 100%;
+  display: none;
+  margin: 0;
+  clear: both;
+
+}
+
+.chartWrap{
+  cursor: pointer;
+}
+.chartWrap{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+  border: none;
+  width: 100%;
+  min-height: 110px;
+  background: #006656;
+  box-sizing: border-box;
+}
+
+.flowchart{
+  padding: 1% 10%;
+}
+.chartWrap{
+  border-right: 1px dashed #f9f9f9;
+  border-left: 1px dashed #f9f9f9;
+}
+.chart:first-child .chartWrap{
+  border-left: none;
+}
+.chart:last-child .chartWrap{
+  border-right: none;
+}
+
+.row-hidden .chartWrap{
+  background: #00a89b;
+}
+
+.chartWrap{
+  color: #ffffff;
+  display: table;
+  position: relative;
+}
+.chartWrap .textWrap{
+  display: table-cell;
+  vertical-align:  middle;
+}
+.chartIcons{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.chart .chartExpand > .glyphicon{
+  -ms-transform: none;
+  -webkit-transform: none;
+  transform: none;
+  color: #fff;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+.chart .chartExpand.active > .glyphicon{
+  color: #fff;
+  -ms-transform: rotate(-180deg);
+  -webkit-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+.chart .chartWrap{
+  border: 2.5px solid transparent;
+}
+.chartDetails .glyphicon:hover{
+  transform: scale(1.5);
+  margin-top: 6px;
+}
+.chartWrap{
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+.chart.active .chartWrap,
+.chart.active .row-hidden.active .chart{
+  border: 2.5px solid #fff;
+  -webkit-box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.4);
+  -moz-box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.4);
+  box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.4);
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  z-index: 9999;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+.chartExpand, .chartDetails{
+  position: relative;
+}
+.chartExpand{
+  float: right;
+  height: 100%;
+  width: 50%;
+}
+.chartDetails{
+  height: 100%;
+  width: 50%;
+  float: left;
+}
+.chartExpand .glyphicon{
+  display: none;
+}
+.expand .chartExpand .glyphicon{
+  display: block;
+  position: absolute;
+  width: 30px;
+  right: 0;
+  top: auto !important;
+  bottom: 5px !important;
+}
+.chartDetails .glyphicon{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 0;
+  top: 5px;
+
+}
+.chart.disabled{
+  opacity: 0.3 !important;
+}
+.chart.active{
+  opacity: 1 !important;
+}
+.p25{
+  padding: 2.5px;
+}
+.np{
+  padding: 0px !important;
+}
+.openClose{
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+@media screen and (min-width: 320px) {
+  .textWrap{
+    padding: 5px;
+    font-size: 0.7em;
+    line-height: 15px;
+    font-weight: 700;
+  }
+  .disabled{
+    display: none;
+  }
+  .chart.active .chartWrap,
+  .chart.active .row-hidden.active .chart{
+    border: none;
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+}
+@media screen and (min-width: 768px) {
+  .textWrap{
+    padding: 10px;
+    font-size: 10px;
+    line-height: 15px;
+    font-weight: 700;
+  }
+  .flowchart{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .chart.active .chartWrap,
+  .chart.active .row-hidden.active .chart{
+    border: 2.5px solid #fff;
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+@media screen and (min-width: 980px) {
+  .textWrap{
+    padding: 10px;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 700;
+  }
+}
