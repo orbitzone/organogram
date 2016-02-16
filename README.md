@@ -5,4 +5,6 @@ This is a perfect fully responsive prototype, just need to be improved as you ne
 
 There are two examples available.
 
+You can see a live preview in http://orbit.zone/organograma/
+
 Felipe Santiago.
